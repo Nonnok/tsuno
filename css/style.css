@@ -1,0 +1,260 @@
+a {
+  text-decoration: none;
+}
+body {
+  background: #f5f5f5;
+}
+ul {
+  list-style: none;
+}
+
+/* key visual styles */
+.keyvisual {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: -3;
+  background: #943539;
+  margin-top: 72px;
+}
+.keyvisual img {
+  position: fixed;
+  height: 100vh;
+  background: #943539;
+}
+/* key visual styles end */
+
+/* main styles */
+main {
+  max-width: 100%;
+  background: #f5f5f5;
+}
+
+
+.descriptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+.descriptions-img {
+  width: 40%;
+}
+.descriptions-text {
+  color: #333;
+  line-height: 1.3em;
+  margin: 2em;
+}
+
+/* main styles end */
+
+/* footer styles */
+footer {
+  padding: 2em 2em 1em 2em;
+  background: #333;
+  color: #e1e1e1;
+}
+
+footer ul {
+  display: flex;
+  align-items: baseline;
+}
+
+footer ul li:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+small {
+  display: inline-block;
+  font-size: 12px;
+}
+/* footer styles end */
+
+/* responsive styles */
+@media screen and (max-width: 600px) {
+  footer {
+    font-size: 12px;
+  }
+  small {
+    font-size: 8px;
+  }
+}
+
+
+
+
+/* hanburder menu triger */
+@media screen and (min-width: 615px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 615px) {
+  .normal-menu {
+    display: none;
+  }
+  .main-image, main p {
+    max-width: 95%;
+    font-size: 12px;
+  }
+  .top-title {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 333px) {
+  .toggle-btn {
+    right: 12px;
+  }
+}
+/* hanburder menu triger end */
+
+
+
+/* header styles */
+.top-title-box {
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 72px;
+  z-index: 50;
+  position: fixed;
+  color: #333;
+  background: #f5f5f5;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-icon {
+  display: block;
+  width: 120px;
+}
+.top-icon-box {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin: .5em 0 .5em .5em;
+}
+/* header styles end */
+/* pc nav styles */
+.pc-nav {
+  display: inline-block;
+  padding: .5em;
+  margin-right: 12px;
+}
+.pc-nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.pc-nav li {
+  font-size: 14px;
+  display: block;
+  padding: 1em;
+}
+.pc-nav a {
+  color: #333;
+}
+.pc-nav a:hover {
+  transition: .4s;
+  color:gray;
+}
+/* pc nav styles end */
+/* hamburger menu styles */
+.hamburger-nav {
+  display: block;
+  position: fixed;
+  background: #efefef;
+  width: 220px;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  transition: all .5s;
+  z-index: 55;
+  opacity: 0;
+}
+.open .hamburger-nav {
+  left: 0;
+  opacity: 1;
+}
+.hamburger-nav .inner ul {
+  margin: 36px;
+  padding: 0;
+}
+.hamburger-nav .inner ul a li {
+  margin: 0;
+  padding: .2em;
+}
+.hamburger-nav .inner ul a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 1em;
+  transition-duration: .4s;
+  border-bottom: 1px solid #333;
+}
+.hamburger-nav .inner ul a:hover {
+  background: #efefef;
+}
+
+.toggle-btn {
+  display: block;
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  width: 30px;
+  height: 30px;
+  z-index: 55;
+  cursor: pointer;
+}
+.toggle-btn span {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #333;
+  transition: all .5s;
+  border-radius: 4px;
+}
+
+.toggle-btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle-btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle-btn span:nth-child(3) {
+  bottom: 4px;
+}
+.open .toggle-btn span {
+  background: #efefef;
+}
+.open span:nth-child(1) {
+  transform: translateY(10px) rotate(-315deg);
+}
+.open span:nth-child(2) {
+  opacity: 0;
+}
+.open span:nth-child(3) {
+  transform: translateY(-10px) rotate(315deg);
+}
+
+#mask {
+  display: none;
+  transition: all .5s;
+}
+.open #mask {
+  display: block;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: .8;
+  z-index: 52;
+  cursor: pointer;
+}
+/* hamburger menu styles end */

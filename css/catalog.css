@@ -1,0 +1,46 @@
+main {
+  margin: 100px 0;
+}
+.catalog-title {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.catalog-container {
+  display: grid;
+  gap: 1em;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 240px);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.goods-card {
+  width: 240px;
+  border: 1px solid #e9eaea;
+  border-radius: 3px;
+  transition: transform .3s ease;
+}
+.goods-card:hover {
+  transform: scale(1.1);
+}
+.img-box {
+  padding: 10px 0;
+  background: #EEEEEE;
+  text-align: center;
+}
+.img-box img {
+  width: 120px;
+}
+.text-box {
+  padding: 15px;
+  color: #333;
+  background: #fff;
+  line-height: 1.3em;
+}
+.model-type {
+  font-size: 12px;
+}
+.price {
+  font-weight: bold;
+}
