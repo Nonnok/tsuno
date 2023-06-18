@@ -3,6 +3,7 @@ a {
 }
 body {
   background: #f5f5f5;
+  font-family: sans-serif;
 }
 ul {
   list-style: none;
@@ -28,25 +29,28 @@ ul {
 
 /* main styles */
 main {
-  max-width: 100%;
   background: #f5f5f5;
+  padding-top: 24px;
+  width: 95%;
+  margin: 0 auto;
 }
 
-
 .descriptions {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 500px);
+  gap: 1.5em;
   margin: 0 auto;
 }
 .descriptions-img {
-  width: 40%;
+  height: 360px;
+  margin: 0 auto;
 }
 .descriptions-text {
   color: #333;
   line-height: 1.3em;
-  margin: 2em;
+  margin: 2em 0;
 }
 
 /* main styles end */
@@ -81,37 +85,24 @@ small {
   small {
     font-size: 8px;
   }
-}
-
-
-
-
-/* hanburder menu triger */
-@media screen and (min-width: 615px) {
-  .hamburger-menu {
-    display: none;
+  main {
+    width: 100%;
   }
 }
-@media screen and (max-width: 615px) {
-  .normal-menu {
-    display: none;
+@media screen and (max-width: 1080px) {
+  .descriptions {
+    grid-template-columns: repeat(auto-fit, 250px);
   }
-  .main-image, main p {
-    max-width: 95%;
+  .descriptions-img {
+    width: 250px;
+    height: auto;
+  }
+  .descriptions-text {
     font-size: 12px;
-  }
-  .top-title {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 333px) {
-  .toggle-btn {
-    right: 12px;
+    margin: 0 auto;
+    width: 240px;
   }
 }
-/* hanburder menu triger end */
-
-
 
 /* header styles */
 .top-title-box {
@@ -130,6 +121,7 @@ small {
 .top-icon {
   display: block;
   width: 120px;
+  margin-top: .5em;
 }
 .top-icon-box {
   font-size: 20px;
@@ -138,6 +130,8 @@ small {
   margin: .5em 0 .5em .5em;
 }
 /* header styles end */
+
+
 /* pc nav styles */
 .pc-nav {
   display: inline-block;
@@ -161,6 +155,8 @@ small {
   color:gray;
 }
 /* pc nav styles end */
+
+
 /* hamburger menu styles */
 .hamburger-nav {
   display: block;
@@ -192,7 +188,7 @@ small {
   font-size: 14px;
   padding: 1em;
   transition-duration: .4s;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid silver;
 }
 .hamburger-nav .inner ul a:hover {
   background: #efefef;
@@ -257,4 +253,26 @@ small {
   z-index: 52;
   cursor: pointer;
 }
-/* hamburger menu styles end */
+/* hanburder menu triger */
+@media screen and (min-width: 615px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 615px) {
+  .normal-menu {
+    display: none;
+  }
+  .main-image, main p {
+    max-width: 95%;
+    font-size: 12px;
+  }
+  .top-title {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 333px) {
+  .toggle-btn {
+    right: 12px;
+  }
+}

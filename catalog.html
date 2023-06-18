@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WEAR</title>
-  <link rel="icon" href="favicon.png">
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/catalog.css">
@@ -48,8 +48,29 @@
   </header>
   <main>
     <h2 class="catalog-title">CATALOG</h2>
-    <div class="catalog-container">
-      <a href="wearpage/yellow-raincoat.html" class="goods-link">
+
+    <div class="filters">
+      <div>
+        <input type="radio" name="categories" id="All" value="All" checked/>
+        <label for="All">ALL</label>
+      </div>
+      <div>
+        <input type="radio" name="categories" id="tsuno" value="tsuno">
+        <label for="tsuno">ツノ</label>
+      </div>
+      <div>
+        <input type="radio" name="categories" id="hito" value="hito">
+        <label for="hito">ヒト</label>
+      </div>
+      <div>
+        <input type="radio" name="categories" id="hitotsuno" value="hitotsuno">
+        <label for="hitotsuno">ヒトツノ共通</label>
+      </div>
+    </div>
+
+    <div class="targets">
+    <div class="targets catalog-container">
+      <a href="wearpage/yellow-raincoat.html" class="target" data-category="hitotsuno">
         <div class="goods-card">
           <div class="img-box">
             <img src="img/unb-wear.PNG" alt="上半分が黄色、下半分がビニール素材のレインコート">
@@ -61,7 +82,7 @@
           </div>
         </div>
       </a>
-      <a href="" class="goods-link">
+      <a href="wearpage/fireman-coat.html" class="target" data-category="hito">
         <div class="goods-card">
           <div class="img-box">
             <img src="img/fireman-wear.PNG" alt="消防服風の上着">
@@ -73,7 +94,7 @@
           </div>
         </div>
       </a>
-      <a href="" class="goods-link">
+      <a href="wearpage/green-tops.html" class="target" data-category="hitotsuno">
         <div class="goods-card">
           <div class="img-box">
             <img src="img/first-wear.PNG" alt="緑色の上着">
@@ -82,6 +103,42 @@
             <p class="model-type">ヒトツノ共通</p>
             <p class="goods-name">安全色ノーカラー</p>
             <p class="price">￥3,000</p>
+          </div>
+        </div>
+      </a>
+      <a href="wearpage/seep-wear.html" class="target" data-category="hitotsuno">
+        <div class="goods-card">
+          <div class="img-box">
+            <img src="img/seep-wear.PNG" alt="灰色の上着">
+          </div>
+          <div class="text-box">
+            <p class="model-type">ヒトツノ共通</p>
+            <p class="goods-name">司書の鏡</p>
+            <p class="price">￥5,000</p>
+          </div>
+        </div>
+      </a>
+      <a href="wearpage/room-wear.html" class="target" data-category="hitotsuno">
+        <div class="goods-card">
+          <div class="img-box">
+            <img src="img/yaku-wear.PNG" alt="水色のタンクトップ">
+          </div>
+          <div class="text-box">
+            <p class="model-type">ヒトツノ共通</p>
+            <p class="goods-name">部屋着</p>
+            <p class="price">￥4,000</p>
+          </div>
+        </div>
+      </a>
+      <a href="wearpage/mountain.html" class="target" data-category="hitotsuno">
+        <div class="goods-card">
+          <div class="img-box">
+            <img src="img/cool-wear.PNG" alt="青と白の上着">
+          </div>
+          <div class="text-box">
+            <p class="model-type">ヒトツノ共通</p>
+            <p class="goods-name">マウンテンパーカー</p>
+            <p class="price">￥6,000</p>
           </div>
         </div>
       </a>
@@ -102,5 +159,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
 </body>
 </html>

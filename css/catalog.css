@@ -1,5 +1,6 @@
 main {
-  margin: 100px 0;
+  margin: 100px auto;
+  width: 100%;
 }
 .catalog-title {
   text-align: center;
@@ -8,15 +9,15 @@ main {
 
 .catalog-container {
   display: grid;
-  gap: 1em;
+  gap: 1.5em;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 240px);
+  grid-template-columns: repeat(auto-fit, 280px);
   width: 80%;
   margin: 0 auto;
 }
 
 .goods-card {
-  width: 240px;
+  width: 280px;
   border: 1px solid #e9eaea;
   border-radius: 3px;
   transition: transform .3s ease;
@@ -44,3 +45,28 @@ main {
 .price {
   font-weight: bold;
 }
+
+/* search styles */
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 7em);
+  gap: 1px;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.filters div input {
+  display: none;
+}
+.filters div label {
+  display: inline-block;
+  width: 7em;
+  text-align: center;
+  padding: .5em 0;
+  background: #333;
+  color: white;
+}
+.filters div input:checked+label {
+  background: silver;
+  color: #333;
+}
+/* search styles end */
