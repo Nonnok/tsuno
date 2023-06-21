@@ -1,6 +1,7 @@
 main {
-  margin: 100px auto;
+  margin: 0 auto;
   width: 100%;
+  padding: 50px 0;
 }
 .catalog-title {
   text-align: center;

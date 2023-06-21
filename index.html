@@ -8,6 +8,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/catalog.css">
 </head>
 <body>
   <header>
@@ -16,7 +17,7 @@
         <a href="index.html"><img src="img/hidume-logo.PNG" alt="Hidumeのブランドロゴ" class="top-icon"></a>
       </div>
 
-      <div class="hamburger-menu">
+      <!-- <div class="hamburger-menu">
         <div id="navArea">
           <nav class="hamburger-nav">
             <div class="inner">
@@ -43,39 +44,108 @@
           </ul>
         </nav>
       </div>
-    </div>
+    </div> -->
   </header>
   <div class="keyvisual">
     <img src="img/keyvisual.PNG" alt="ヤクのキービジュアル">
   </div>
   <main>
-    <div class="main-contents">
-      <div class="descriptions">
-        <img src="img/unb-top-img.PNG" alt="傘を杖にした蹄持の絵" class="descriptions-img">
-        <div class="descriptions-text">
-          <p>Hidumeはあまねくヒト科に着る自由を提供することを理念としています。</p>
-          <p>
-            ツノモデル、ヒトモデル、共通モデルを設置。<br>
-            自分の身体に合わないモデルも「お直しサービス」を利用することで快適に着こなすことができます。
-          </p>
-        </div>
+
+    <h2 class="catalog-title">CATALOG</h2>
+
+    <!-- <div class="filters">
+      <div>
+        <input type="radio" name="categories" id="All" value="All" checked/>
+        <label for="All">ALL</label>
       </div>
-      <hr>
-      <div class="descriptions">
-        <div class="descriptions-text">
-          <p>ほとんどのデザインは作業服から着想を得ています。</p>
-          <p>防護服の包み込まれるような安心感を重視して一着一着丁寧に作り上げます。</p>
-        </div>
-        <img src="img/fireman.PNG" alt="消防隊に着想を得た服" class="descriptions-img fireman-img">
+      <div>
+        <input type="radio" name="categories" id="tsuno" value="tsuno">
+        <label for="tsuno">ツノ</label>
       </div>
-      <hr>
-      <div class="descriptions">
-        <img src="img/hidume-logo.PNG" alt="Hidumeのブランドロゴ" class="descriptions-img fireman-img">
-        <div class="descriptions-text">
-          <p>ほとんどのデザインは作業服から着想を得ています。</p>
-          <p>防護服の包み込まれるような安心感を重視して一着一着丁寧に作り上げます。</p>
-        </div>
+      <div>
+        <input type="radio" name="categories" id="hito" value="hito">
+        <label for="hito">ヒト</label>
       </div>
+      <div>
+        <input type="radio" name="categories" id="hitotsuno" value="hitotsuno">
+        <label for="hitotsuno">ヒトツノ共通</label>
+      </div>
+    </div> -->
+
+    <div class="targets">
+    <div class="targets catalog-container">
+      <a href="wearpage/yellow-raincoat.html" class="target" data-category="hitotsuno">
+        <div class="goods-card">
+          <div class="img-box">
+            <img src="img/unb-wear.PNG" alt="上半分が黄色、下半分がビニール素材のレインコート">
+          </div>
+          <div class="text-box">
+            <p class="model-type">ヒトツノ共通</p>
+            <p class="goods-name">警戒色レインコート</p>
+            <p class="price">￥5,700</p>
+          </div>
+        </div>
+      </a>
+      <a href="wearpage/fireman-coat.html" class="target" data-category="hito">
+        <div class="goods-card">
+          <div class="img-box">
+            <img src="img/fireman-wear.PNG" alt="消防服風の上着">
+          </div>
+          <div class="text-box">
+            <p class="model-type">ヒトモデル</p>
+            <p class="goods-name">消防士風コート</p>
+            <p class="price">￥6,000</p>
+          </div>
+        </div>
+      </a>
+      <a href="wearpage/green-tops.html" class="target" data-category="hitotsuno">
+        <div class="goods-card">
+          <div class="img-box">
+            <img src="img/first-wear.PNG" alt="緑色の上着">
+          </div>
+          <div class="text-box">
+            <p class="model-type">ヒトツノ共通</p>
+            <p class="goods-name">安全色ノーカラー</p>
+            <p class="price">￥3,000</p>
+          </div>
+        </div>
+      </a>
+      <a href="wearpage/seep-wear.html" class="target" data-category="hitotsuno">
+        <div class="goods-card">
+          <div class="img-box">
+            <img src="img/seep-wear.PNG" alt="灰色の上着">
+          </div>
+          <div class="text-box">
+            <p class="model-type">ヒトツノ共通</p>
+            <p class="goods-name">司書の鏡</p>
+            <p class="price">￥5,000</p>
+          </div>
+        </div>
+      </a>
+      <a href="wearpage/room-wear.html" class="target" data-category="hitotsuno">
+        <div class="goods-card">
+          <div class="img-box">
+            <img src="img/yaku-wear.PNG" alt="水色のタンクトップ">
+          </div>
+          <div class="text-box">
+            <p class="model-type">ヒトツノ共通</p>
+            <p class="goods-name">部屋着</p>
+            <p class="price">￥4,000</p>
+          </div>
+        </div>
+      </a>
+      <a href="wearpage/mountain.html" class="target" data-category="hitotsuno">
+        <div class="goods-card">
+          <div class="img-box">
+            <img src="img/cool-wear.PNG" alt="青と白の上着">
+          </div>
+          <div class="text-box">
+            <p class="model-type">ヒトツノ共通</p>
+            <p class="goods-name">マウンテンパーカー</p>
+            <p class="price">￥6,000</p>
+          </div>
+        </div>
+      </a>
     </div>
   </main>
 
@@ -93,5 +163,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
 </body>
 </html>
