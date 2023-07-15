@@ -9,6 +9,16 @@ ul {
   list-style: none;
 }
 
+.warkin-bunner {
+  display: block;
+  margin: 0 auto 3em;
+  width: 80%;
+  transition: .3s;
+}
+.warkin-bunner:hover {
+  opacity: .6;
+}
+
 /* key visual styles */
 .keyvisual {
   display: flex;
@@ -22,7 +32,7 @@ ul {
 }
 .keyvisual img {
   position: fixed;
-  height: 100vh;
+  height: 64vh;
   background: #943539;
 }
 /* key visual styles end */
@@ -54,6 +64,8 @@ main {
 }
 
 /* main styles end */
+
+
 
 /* footer styles */
 footer {
@@ -128,6 +140,19 @@ small {
   display: flex;
   align-items: center;
   margin: .5em 0 .5em .5em;
+}
+
+.top-icon-box a {
+  display: flex;
+  justify-content: space-around;
+}
+
+.back-to-page {
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 1em;
 }
 /* header styles end */
 

@@ -71,3 +71,29 @@ main {
   color: #333;
 }
 /* search styles end */
+
+/* gallery styles */
+.gallery-title {
+  margin-top: 3em;
+}
+
+.gallery {
+  display: grid;
+  gap: 1.5em;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 280px);
+  width: 80%;
+  margin: 0 auto;
+}
+.gallery-img {
+  width: 280px;
+  height: 280px;
+  border: 1px solid #e9eaea;
+  transition: transform .3s ease;
+  background: white;
+}
+.gallery-img img {
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+}
